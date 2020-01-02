@@ -1,18 +1,84 @@
-<section class="contact-call-to-action">
-    <div class="shadow-block vh-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="block">
-                        <h2>Get In Touch</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero fugiat cum ad officia, harum, et
-                            voluptas quia vel voluptatem aliquam, facilis corporis nam tempore ullam doloribus iusto sequi ipsum.
-                            Fugiat non culpa ad beatae sed dolorem doloribus accusamus</p>
-                        <a class="btn btn-default btn-main" href="#" role="button">Contact Us</a>
+<section class="contact-map">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 padding-0">
+                <!-- map -->
+                <div id="map" data-latitude="51.507351" data-longitude="-0.127758"></div>
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="contact-img">
+                        <img src="images/contact/contact-img1.png" alt="">
+                    </div>
+                    <div class="contact-content">
+                        <div class="content-title-section text-center">
+                            <h3 class="content-title">İLETİŞİM BİLGİLERİ</h3>
+                        </div>
+                        <div class="home-address">
+                            <div class="flex">
+                                <div class="contact-icon text-center">
+                                    <i class="tf-ion-ios-home-outline"></i>
+                                </div>
+                                <p class="ct-info">{{$generalSettings->address}}</p>
+                            </div>
+                        </div>
+                        <div class="web-address">
+                            <div class="flex">
+                                <div class="contact-icon text-center">
+                                    <i class="tf-global"></i>
+                                </div>
+                                <a href="mailto:{{$generalSettings->contact_mail}}" class="ct-info">{{$generalSettings->contact_mail}}</a>
+                            </div>
+                        </div>
+                        <div class="phone-address">
+                            <div class="flex">
+                                <div class="contact-icon text-center">
+                                    <i class="tf-ion-android-phone-portrait"></i>
+                                </div>
+                                <a href="tel:+90{{$generalSettings->contact_phone}}" class="ct-info">
+                                    +90 ({{substr($generalSettings->contact_phone,0,3)}})
+                                    {{substr($generalSettings->contact_phone,3,3)}}
+                                    {{substr($generalSettings->contact_phone,6,4)}}
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="map" data-latitude="51.507351" data-longitude="-0.127758"></div>
+</section>
+
+<!-- Contact From Study Sections
+ =========================-->
+<section class="contact-form">
+    <div class="container">
+        <div class="row">
+            <div class="title text-center">
+                <h2>İLETİŞİM FORMU</h2>
+            </div>
+            <form class="" method="post">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input required name="subject" type="text" class="form-control" placeholder="Konu">
+                    </div>
+                    <div class="form-group">
+                        <input required name="email" type="email" class="form-control" placeholder="E-posta Adresi">
+                    </div>
+                    <div class="form-group margin-0">
+                        <input required name="name_surname" type="text" class="form-control" placeholder="Ad Soyad">
+                    </div>
+                </div>
+                <div class="col-md-6 margin-0">
+                    <div class="form-group">
+                        <textarea required name="message" class="form-control " rows="3" placeholder="Mesajınız"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="contact-btn text-center">
+                        <input class="btn btn-default btn-main btn-block" type="submit" value="MESAJ GÖNDER">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </section>

@@ -13,4 +13,28 @@ class HomeController extends Controller
         $generalSettings = GeneralSettingsTableModel::find(1);
         return view('home',compact('generalSettings'));
     }
+
+    public function services()
+    {
+        $generalSettings = GeneralSettingsTableModel::find(1);
+        return view('services',compact('generalSettings'));
+    }
+
+    public function portfolio()
+    {
+        $generalSettings = GeneralSettingsTableModel::find(1);
+        return view('portfolio',compact('generalSettings'));
+    }
+
+    public function getInTouch()
+    {
+        $generalSettings = GeneralSettingsTableModel::find(1);
+        return view('get-in-touch',compact('generalSettings'));
+    }
+
+    public function contact()
+    {
+        $generalSettings = GeneralSettingsTableModel::find(1);
+        return view('contact',compact('generalSettings'));
+    }
 }

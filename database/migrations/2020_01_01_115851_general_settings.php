@@ -42,6 +42,6 @@ class GeneralSettings extends Migration
      */
     public function down()
     {
-        Schema::drop('general_settings');
+        Schema::dropIfExists('general_settings');
     }
 }
