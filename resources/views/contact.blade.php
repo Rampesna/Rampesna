@@ -22,3 +22,17 @@
 {{--    @include('Layouts.contact')--}}
     @include('Layouts.footer')
 @endsection
+@section('custom-footer')
+    <script>
+        $(".onlyNumber").keypress(function (e) {
+            if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+                return false;
+            }
+        });
+    </script>
+    @if(isset($postedContactForm))
+        <script>
+            $('#postedContactForm').delay(4000).fadeOut('slow');
+        </script>
+    @endif
+@endsection

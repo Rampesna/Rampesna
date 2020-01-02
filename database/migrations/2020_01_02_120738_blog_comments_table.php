@@ -15,6 +15,7 @@ class BlogCommentsTable extends Migration
     {
         Schema::create('blog_comments', function (Blueprint $table) {
             $table->smallIncrements('id');
+            $table->unsignedSmallInteger('blog_id');
             $table->string('name',128);
             $table->string('email',128);
             $table->longText('message');

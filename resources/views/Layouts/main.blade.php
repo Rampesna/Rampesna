@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="{{asset('plugins/animate/animate.css')}}">
     <link rel="stylesheet" href="{{asset('plugins/slick/slick.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/all.css')}}">
+    <style>
+        .my-services:hover{
+            color:#000;
+        }
+    </style>
 
     @yield('title')
     @yield('description')
@@ -42,6 +48,7 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
 <script src="{{asset('plugins/google-map/gmap.js')}}"></script>
 <script src="{{asset('js/script.js')}}"></script>
+<script src="{{asset('js/all.js')}}" defer></script>
 
 @yield('custom-footer')
 </body>

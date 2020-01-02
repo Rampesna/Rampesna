@@ -15,6 +15,7 @@
     @include('Layouts.navbar')
     @include('Layouts.slider')
     @include('Layouts.about')
+    @include('Layouts.services')
 {{--    @include('Layouts.client-comments')--}}
 {{--    @include('Layouts.partners')--}}
 {{--    @include('Layouts.team')--}}

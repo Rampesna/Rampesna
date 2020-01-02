@@ -13,11 +13,7 @@
 @section('main')
     @include('Layouts.loading')
     @include('Layouts.navbar')
-{{--    @include('Layouts.slider')--}}
-{{--    @include('Layouts.about')--}}
-{{--    @include('Layouts.client-comments')--}}
-{{--    @include('Layouts.partners')--}}
-{{--    @include('Layouts.team')--}}
-{{--    @include('Layouts.contact')--}}
+    @include('Layouts.slim-slider')
+    @include('Layouts.services')
     @include('Layouts.footer')
 @endsection

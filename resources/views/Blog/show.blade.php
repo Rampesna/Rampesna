@@ -13,7 +13,8 @@
 @section('main')
     @include('Layouts.loading')
     @include('Layouts.navbar')
-    {{--    @include('Layouts.slider')--}}
+    @include('Layouts.slim-slider')
+    @include('Layouts.blog-single')
     {{--    @include('Layouts.about')--}}
     {{--    @include('Layouts.client-comments')--}}
     {{--    @include('Layouts.partners')--}}

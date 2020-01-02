@@ -17,7 +17,7 @@ class IncomingMessagesTable extends Migration
             $table->smallIncrements('id');
             $table->string('name',128);
             $table->string('email',128);
-            $table->string('subject',255);
+            $table->string('phone',10);
             $table->longText('message');
             $table->timestamps();
         });

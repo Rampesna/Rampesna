@@ -1,3 +1,8 @@
+@if(isset($postedContactForm))
+    <div id="postedContactForm" class="alert alert-success page-alert text-center" style="border-radius: 0px;margin: 0">
+        <strong>Teşekkür Ederim!</strong> Mesajınız Tarafıma Ulaşmıştır. En Kısa Zamanda Size Geri Dönüş Sağlayacağım.
+    </div>
+@endif
 <section class="contact-map">
     <div class="container-fluid">
         <div class="row">
@@ -56,10 +61,11 @@
             <div class="title text-center">
                 <h2>İLETİŞİM FORMU</h2>
             </div>
-            <form class="" method="post">
+            <form action="{{route('contact-post')}}" class="" method="post">
+                {{csrf_field()}}
                 <div class="col-md-6">
                     <div class="form-group">
-                        <input required name="subject" type="text" class="form-control" placeholder="Konu">
+                        <input required maxlength="10" name="phone" type="text" class="form-control onlyNumber" placeholder="Telefon">
                     </div>
                     <div class="form-group">
                         <input required name="email" type="email" class="form-control" placeholder="E-posta Adresi">
