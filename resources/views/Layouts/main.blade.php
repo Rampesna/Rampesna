@@ -45,7 +45,7 @@
 <script src="{{asset('plugins/magnific-popup/jquery.magnific-popup.min.js')}}"></script>
 <script src="{{asset('plugins/parallax.min.js')}}"></script>
 <script src="{{asset('plugins/jquery.vide.js')}}"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAPS_API_KEY')}}"></script>
 <script src="{{asset('plugins/google-map/gmap.js')}}"></script>
 <script src="{{asset('js/script.js')}}"></script>
 <script src="{{asset('js/all.js')}}" defer></script>

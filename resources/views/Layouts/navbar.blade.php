@@ -18,7 +18,7 @@
             <ul class="nav navbar-nav navbar-right menu">
                 <li><a href="{{route('home')}}">ANASAYFA</a></li>
 {{--                <li><a href="{{route('services')}}">HİZMETLERİM</a></li>--}}
-                <li><a href="{{route('portfolio')}}">PORTFOLYOM</a></li>
+{{--                <li><a href="{{route('portfolio')}}">PORTFOLYOM</a></li>--}}
                 <li><a href="{{route('blog.index')}}">BLOG</a></li>
                 <li><a href="{{route('contact')}}">İLETİŞİM</a></li>
             </ul>

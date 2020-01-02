@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-md-12 padding-0">
                 <!-- map -->
-                <div id="map" data-latitude="51.507351" data-longitude="-0.127758"></div>
+                <div id="map" data-latitude="38.3540124" data-longitude="38.3191364"></div>
                 <!-- Contact Information -->
                 <div class="contact-info">
                     <div class="contact-img">
