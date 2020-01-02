@@ -1,12 +1,12 @@
 @extends('Layouts.main')
 @section('title')
-    <title>Talha Can | Yazılım Mühendisi & Grafiker</title>
+    <title>{{$generalSettings->title}}</title>
 @endsection
 @section('description')
-    <meta name="description" content="Talha Can, Yazılım Mühendisi ve Grafiker">
+    <meta name="description" content="{{$generalSettings->description}}">
 @endsection
 @section('keywords')
-    <meta name="keywords" content="yazılım,yazılım mühendisi,web geliştirici,web tasarım,web yazılım,laravel,sql,mysql,php,framework,grafiker, grafik tasarım,photoshop,illustrator">
+    <meta name="keywords" content="{{$generalSettings->keywords}}">
 @endsection
 @section('custom-header')
 @endsection
@@ -15,9 +15,9 @@
     @include('Layouts.navbar')
     @include('Layouts.slider')
     @include('Layouts.about')
-    @include('Layouts.client-comments')
-    @include('Layouts.partners')
-    @include('Layouts.team')
-    @include('Layouts.contact')
+{{--    @include('Layouts.client-comments')--}}
+{{--    @include('Layouts.partners')--}}
+{{--    @include('Layouts.team')--}}
+{{--    @include('Layouts.contact')--}}
     @include('Layouts.footer')
 @endsection

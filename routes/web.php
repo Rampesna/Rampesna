@@ -12,10 +12,11 @@
 */
 
 Auth::routes([
+    'login' => false,
     'register' => false,
     'reset' => false,
     'verify' => false
 ]);
-Route::get('/', function () {
-    return view('home');
+Route::namespace('SiteControllers')->group(function (){
+    Route::get('/','HomeController@home')->name('home');
 });
