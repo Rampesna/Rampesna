@@ -16,7 +16,7 @@
             </a>
             <ul id="blog" class="collapse list-unstyled ">
                 <li><a href="#">Yazı Ekle</a></li>
-                <li><a href="#">Tüm Yazılar</a></li>
+                <li><a href="{{route('admin.blog')}}">Tüm Yazılar</a></li>
                 <li><a href="#">Kategoriler</a></li>
             </ul>
         </li>

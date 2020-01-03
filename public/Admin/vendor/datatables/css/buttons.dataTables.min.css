@@ -1,0 +1,32 @@
+.buttons-print{
+    border: 1px solid gray;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.buttons-excel{
+    border: 1px solid gray;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.buttons-pdf{
+    border: 1px solid gray;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.buttons-copy{
+    border: 1px solid gray;
+    color: white;
+    background-color: rgba(0,0,0,0);
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}

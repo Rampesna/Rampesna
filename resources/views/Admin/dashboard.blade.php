@@ -13,7 +13,7 @@
         <div class="container-fluid">
             <div class="row">
                 <a href="#" style="text-decoration: none;" class="col-md-6 col-sm-12 mb-3">
-                    <div class="statistic-block block" style="height: 150px;border-radius: 5px;">
+                    <div class="statistic-block block" style="border-radius: 5px;">
                         <div class="text-center">
                             <i class="dashtext-2 fa fa-envelope fa-2x mt-2" style="float: left"></i>
                             <div class="number dashtext-2" style="float: right">10</div>
@@ -29,7 +29,7 @@
                     </div>
                 </a>
                 <a href="#" style="text-decoration: none;" class="col-md-6 col-sm-12 mb-3">
-                    <div class="statistic-block block" style="height: 150px;border-radius: 5px;">
+                    <div class="statistic-block block" style="border-radius: 5px;">
                         <div class="text-center">
                             <i class="dashtext-1 fa fa-envelope fa-2x mt-2" style="float: left"></i>
                             <div class="number dashtext-1" style="float: right">6</div>

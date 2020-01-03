@@ -18,7 +18,7 @@ Route::get('tryMe',function (){
     return $pass;
 });
 Auth::routes([
-
+    'register' => false,
     'reset' => false,
     'verify' => false
 ]);
@@ -44,5 +44,8 @@ Route::namespace('SiteControllers')->group(function (){
 });
 
 Route::namespace('AuthControllers')->prefix('auth')->group(function (){
+    Route::get('/','HomeController@dashboard')->name('admin.dashboard');
     Route::get('/dashboard','HomeController@dashboard')->name('admin.dashboard');
+
+    Route::get('/blog','HomeController@blog')->name('admin.blog');
 });

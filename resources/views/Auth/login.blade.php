@@ -44,7 +44,6 @@
                             <div class="col">
                                 <label>Şifre</label>
                             </div>
-                            <div class="col-auto"><a href="#" class="form-text small text-muted">Forgot password?</a></div>
                         </div>
                         <input name="password" placeholder="Şifreniz" type="password" required data-msg="Lütfen Şifrenizi Giriniz" class="form-control">
                     </div>
