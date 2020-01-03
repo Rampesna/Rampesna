@@ -16,13 +16,64 @@ class BlogController extends Controller
     {
         $getBlogPosts = BlogTableModel::
         orderBy('created_at', 'DESC')->
-        skip(($page - 1) * 10)->
-        take(10)->
+        skip(($page - 1) * 5)->
+        take(5)->
         get();
         $allPostsCount = BlogTableModel::all()->count();
         $allCategories = BlogCategoriesTableModel::all();
         $generalSettings = GeneralSettingsTableModel::find(1);
         return view('Blog.index', compact('generalSettings', 'getBlogPosts', 'allCategories', 'page', 'allPostsCount'));
+    }
+
+    public function searchPost(Request $request, $page = 1)
+    {
+        $getBlogPosts = BlogTableModel::
+        where('title', 'like', '%' . $request->keyword . '%')->
+        orWhere('content', 'like', '%' . $request->keyword . '%')->
+        orderBy('created_at', 'DESC')->
+        skip(($page - 1) * 5)->
+        take(5)->
+        get();
+        $allPostsCount = BlogTableModel::
+        where('title', 'like', '%' . $request->keyword . '%')->
+        orWhere('content', 'like', '%' . $request->keyword . '%')->
+        count();
+        $keyword = $request->keyword;
+        $allCategories = BlogCategoriesTableModel::all();
+        $generalSettings = GeneralSettingsTableModel::find(1);
+        return view('Blog.search', compact('generalSettings', 'keyword', 'getBlogPosts', 'allCategories', 'page', 'allPostsCount'));
+    }
+
+    public function searchPage($keyword, $page)
+    {
+        $getBlogPosts = BlogTableModel::
+        where('title', 'like', '%' . $keyword . '%')->
+        orWhere('content', 'like', '%' . $keyword . '%')->
+        orderBy('created_at', 'DESC')->
+        skip(($page - 1) * 5)->
+        take(5)->
+        get();
+        $allPostsCount = BlogTableModel::
+        where('title', 'like', '%' . $keyword . '%')->
+        orWhere('content', 'like', '%' . $keyword . '%')->
+        count();
+        $allCategories = BlogCategoriesTableModel::all();
+        $generalSettings = GeneralSettingsTableModel::find(1);
+        return view('Blog.search', compact('generalSettings', 'keyword', 'getBlogPosts', 'allCategories', 'page', 'allPostsCount'));
+    }
+
+    public function getLikeCategory($id, $page)
+    {
+        $getBlogPosts = BlogTableModel::
+        where('categories', 'like', '%' . $id . '%')->
+        orderBy('created_at', 'DESC')->
+        skip(($page - 1) * 5)->
+        take(5)->
+        get();
+        $allPostsCount = BlogTableModel::where('categories', 'like', '%' . $id . '%')->count();
+        $allCategories = BlogCategoriesTableModel::all();
+        $generalSettings = GeneralSettingsTableModel::find(1);
+        return view('Blog.category', compact('generalSettings', 'id', 'getBlogPosts', 'allCategories', 'page', 'allPostsCount'));
     }
 
     public function show($id)
@@ -43,16 +94,14 @@ class BlogController extends Controller
         return view('Blog.show', compact('generalSettings', 'post', 'postComments', 'categoryList'));
     }
 
-    public function search(Request $request, $page = 1)
+    public function setNewComment(Request $request)
     {
-        $getSearchedBlogPosts = BlogTableModel::
-        where('title', 'like', '%' . $request->search_keyword . '%')->
-        orWhere('content', 'like', '%' . $request->search_keyword . '%')->
-        orderBy('created_at', 'DESC')->
-        get();
-        $allPostsCount = count($getSearchedBlogPosts);
-        $allCategories = BlogCategoriesTableModel::all();
-        $generalSettings = GeneralSettingsTableModel::find(1);
-        return view('Blog.search', compact('generalSettings', 'getSearchedBlogPosts', 'allCategories', 'page', 'allPostsCount'));
+        $newComment = new BlogCommentsTableModel;
+        $newComment->blog_id = $request->post_id;
+        $newComment->name = $request->name_surname;
+        $newComment->email = $request->email;
+        $newComment->message = $request->comment;
+        $newComment->save();
+        return redirect()->route('blog.show',Crypt::encrypt($request->post_id));
     }
 }

@@ -45,11 +45,9 @@
                 <div class="footer-nav text-center">
                     <div class="col-md-12">
                         <ul>
-                            <li><a href="{{route('home')}}">Anasayfa</a></li>
-                            <li><a href="#">Hizmetler</a></li>
-                            <li><a href="#">Portfolyo</a></li>
-                            <li><a href="#">Çalışma Ekibi</a></li>
-                            <li><a href="#">İletişim</a></li>
+                            <li><a href="{{route('blog.index')}}">Anasayfa</a></li>
+                            <li><a href="{{route('hakkimda')}}">Hakkımda</a></li>
+                            <li><a href="{{route('contact')}}">İletişim</a></li>
                         </ul>
                     </div>
                 </div>

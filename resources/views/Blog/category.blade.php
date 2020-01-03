@@ -90,24 +90,26 @@
                     @endif
 
                     @if($page != 1)
-                        <a href="{{route('blog.page',1)}}" class="btn btn-default btn-main" type="submit"><<</a>
-                        <a href="{{route('blog.page',$page - 1)}}" class="btn btn-default btn-main" type="submit"><</a>
+                        <a href="{{route('blog.category.page',[$id,1])}}" class="btn btn-default btn-main" type="submit"><<</a>
+                        <a href="{{route('blog.category.page',[$id,$page - 1])}}" class="btn btn-default btn-main" type="submit"><</a>
                     @endif
-                    <a class="btn btn-default btn-main" type="submit" disabled>{{$page}}</a>
+                    @if(ceil(($allPostsCount / 5)) != 0)
+                        <a class="btn btn-default btn-main" type="submit" disabled>{{$page}}</a>
+                    @endif
                     @if(ceil(($allPostsCount / 5)) > $page)
-                        <a href="{{route('blog.page',$page + 1)}}" class="btn btn-default btn-main" type="submit">{{$page + 1}}</a>
+                        <a href="{{route('blog.category.page',[$id,$page + 1])}}" class="btn btn-default btn-main" type="submit">{{$page + 1}}</a>
                     @endif
                     @if(ceil(($allPostsCount / 5)) > $page + 1)
-                        <a href="{{route('blog.page',$page + 2)}}" class="btn btn-default btn-main" type="submit">{{$page + 2}}</a>
+                        <a href="{{route('blog.category.page',[$id,$page + 2])}}" class="btn btn-default btn-main" type="submit">{{$page + 2}}</a>
                     @endif
                     @if(ceil(($allPostsCount / 5)) > $page + 2)
-                        <a href="{{route('blog.page',$page + 3)}}" class="btn btn-default btn-main" type="submit">{{$page + 3}}</a>
+                        <a href="{{route('blog.category.page',[$id,$page + 3])}}" class="btn btn-default btn-main" type="submit">{{$page + 3}}</a>
                     @endif
                     @if(ceil(($allPostsCount / 5)) > $page)
-                        <a href="{{route('blog.page',$page + 1)}}" class="btn btn-default btn-main" type="submit">></a>
+                        <a href="{{route('blog.category.page',[$id,$page + 1])}}" class="btn btn-default btn-main" type="submit">></a>
                     @endif
-                    @if(ceil(($allPostsCount / 5)) != $page)
-                        <a href="{{route('blog.page',ceil(($allPostsCount / 5)))}}" class="btn btn-default btn-main" type="submit">>></a>
+                    @if((ceil(($allPostsCount / 5)) != $page) && (ceil(($allPostsCount / 5)) != 0))
+                        <a href="{{route('blog.category.page',[$id,ceil(($allPostsCount / 5))])}}" class="btn btn-default btn-main" type="submit">>></a>
                     @endif
 
                 </div>

@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function home()
+    public function hakkimda()
     {
         $services = ServicesTableModel::all();
         $generalSettings = GeneralSettingsTableModel::find(1);
