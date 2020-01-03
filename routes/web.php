@@ -11,9 +11,14 @@
 |
 */
 
+use Illuminate\Support\Facades\Hash;
+
+Route::get('tryMe',function (){
+    $pass = Hash::make("123123");
+    return $pass;
+});
 Auth::routes([
-    'login' => false,
-    'register' => false,
+
     'reset' => false,
     'verify' => false
 ]);
@@ -36,4 +41,8 @@ Route::namespace('SiteControllers')->group(function (){
 
     Route::get('/contact','HomeController@contact')->name('contact');
     Route::post('/contact','HomeController@contactPost')->name('contact-post');
+});
+
+Route::namespace('AuthControllers')->prefix('auth')->group(function (){
+    Route::get('/dashboard','HomeController@dashboard')->name('admin.dashboard');
 });

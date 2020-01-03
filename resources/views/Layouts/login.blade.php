@@ -31,33 +31,33 @@
         <div class="col-md-5 col-lg-6 col-xl-4 px-lg-5 d-flex align-items-center">
             <div class="w-100 py-5">
                 <div class="text-center"><img src="{{asset('Admin\img\brand\brand-1.svg')}}" alt="..." style="max-width: 6rem;" class="img-fluid mb-4">
-                    <h1 class="display-4 text-gray-light mb-3">Giriş Yap</h1>
+                    <h1 class="display-4 text-gray-light mb-3">Sign in</h1>
                 </div>
-                <form method="post" action="{{route('login')}}" class="form-validate">
-                    {{csrf_field()}}
+                <form action="{{route('login')}}" class="form-validate">
                     <div class="form-group">
-                        <label>Kullanıcı Adı veya E-posta</label>
+                        <label>Email Address</label>
                         <input name="identity" type="text" placeholder="Kullanıcı Adı veya E-posta" autocomplete="off" required data-msg="Lütfen Bu Alanı Doğru Şekilde Doldurun" class="form-control">
                     </div>
                     <div class="form-group mb-4">
                         <div class="row">
                             <div class="col">
-                                <label>Şifre</label>
+                                <label>Password</label>
                             </div>
                             <div class="col-auto"><a href="#" class="form-text small text-muted">Forgot password?</a></div>
                         </div>
                         <input name="password" placeholder="Şifreniz" type="password" required data-msg="Lütfen Şifrenizi Giriniz" class="form-control">
                     </div>
-
+                    <!-- Submit-->
                     <button class="btn btn-lg btn-block btn-primary mb-3">Giriş Yap</button>
-
+                    <!-- Link-->
 
                 </form>
-                <p class="text-center text-muted small mt-5">Bu Web Sayfası <a target="_blank" href="http://rampesna.codes" class="external">Rampesna</a> Tarafından Hazırlanmıştır.</p>
+                <p class="text-center text-muted small mt-5">Bu Web Sayfası <a href="http://rampesna.codes" class="external">Rampesna</a> Tarafından Hazırlanmıştır.</p>
+                <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)                                             -->
             </div>
         </div>
         <div class="col-12 col-md-7 col-lg-6 col-xl-8 d-none d-lg-block">
-
+            <!-- Image-->
             <div style="background-image: url({{asset('Admin/img/photos/victor-ene-1301123-unsplash.jpg')}});" class="bg-cover h-100 mr-n3"></div>
         </div>
     </div>
