@@ -30,7 +30,7 @@ Portfolio site: [Portfolio](https://rampesna.codes/)
 <code><a href="https://laravel.com" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/laravel/laravel-ar21.svg"></a></code>
 <code><a href="https://www.json.org/" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/json/json-ar21.svg"></a></code>
 <code><a href="https://www.mysql.com" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg"></a></code>
-<code><a href="https://restfulapi.net" target="_blank"><img height="50" src="https://15f76u3xxy662wdat72j3l53-wpengine.netdna-ssl.com/wp-content/uploads/2018/02/REST-API-connector-e1530608606904.png"></a></code>
+<code><a href="https://restfulapi.net" target="_blank"><img height="50" src="https://img.icons8.com/windows/2x/api-settings.png"></a></code>
 <code><a href="https://tr.wikipedia.org/wiki/HTML5" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg"></a></code>
 <code><a href="https://tr.wikipedia.org/wiki/CSS" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/netlifyapp_watercss/netlifyapp_watercss-ar21.svg"></a></code>
 <code><a href="https://www.javascript.com" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg"></a></code>
