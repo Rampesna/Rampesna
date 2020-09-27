@@ -1,8 +1,6 @@
 
 ### Hello World!  <img align="right" src="https://github-readme-stats.vercel.app/api?username=rampesna&show_icons=true&line_height=30&theme=cobalt" alt="Mehmet's github stats" /></a>
 
-<img src="https://media.giphy.com/media/WTjXuYA2y4o3UZly3W/source.gif" width="90px">
-
 
 Hi, I'm Talha Can. I work in the field of web technologies. I have worked with PHP and Laravel Framework on various projects, in particular.
 
@@ -19,7 +17,8 @@ Portfolio site: [Portfolio](https://rampesna.codes/)
 
 **📫 Where to find me:** 
 
-[![Linkedin Badge](https://img.shields.io/badge/-ozzmehmet-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rampesna/)](https://www.linkedin.com/in/rampesna/) 
+[![Linkedin Badge](https://img.shields.io/badge/-rampesna
+-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rampesna/)](https://www.linkedin.com/in/rampesna/) 
 [![Gmail Badge](https://img.shields.io/badge/-rampesna@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:isen.rampesna@gmail.com)](mailto:rampesna@gmail.com)
 
 
