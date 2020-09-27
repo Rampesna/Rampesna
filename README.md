@@ -17,8 +17,7 @@ Portfolio site: [Portfolio](https://rampesna.codes/)
 
 **📫 Where to find me:** 
 
-[![Linkedin Badge](https://img.shields.io/badge/-rampesna
--blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rampesna/)](https://www.linkedin.com/in/rampesna/) 
+[![Linkedin Badge](https://img.shields.io/badge/-rampesna-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/rampesna/)](https://www.linkedin.com/in/rampesna/) 
 [![Gmail Badge](https://img.shields.io/badge/-rampesna@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:isen.rampesna@gmail.com)](mailto:rampesna@gmail.com)
 
 
