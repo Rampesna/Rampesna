@@ -1,4 +1,3 @@
-
 <img align="right" src="https://github-readme-stats.vercel.app/api?username=rampesna&show_icons=true&line_height=30&theme=monokai" alt="Talha Can's Github Stats" />
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rampesna&layout=monokai" alt="Talha Can's Github Stats" />
 
