@@ -1,6 +1,8 @@
 
-### Hello World!  <img align="right" src="https://github-readme-stats.vercel.app/api?username=rampesna&show_icons=true&line_height=30&theme=monokai" alt="Talha Can's Github Stats" /></a>
+<img align="right" src="https://github-readme-stats.vercel.app/api?username=rampesna&show_icons=true&line_height=30&theme=monokai" alt="Talha Can's Github Stats" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rampesna&layout=monokai" alt="Talha Can's Github Stats" />
 
+### Hello World!
 
 Hi, I'm Talha Can. I work in the field of web technologies. I have worked with PHP and Laravel Framework on various projects, in particular.
 
