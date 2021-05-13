@@ -4,12 +4,7 @@
 
 Hi, I'm Talha Can. I work in the field of web technologies. I have worked with PHP and Laravel Framework on various projects, in particular.
 
-I have been working with Laravel Framework professional
-
-
-
-
-ly for the last 2 years. I have developed many RESTful Web Service and Web Management Panels with Laravel.
+I have been working with Laravel Framework professionally. I have developed many RESTful Web Service and Web Management Panels with Laravel.
 
 I have a good command of OOP and AOP programming methodologies. I have a lot of experience and expertise in MVC, RESTful and Laravel architectures, PHP, Ajax, HTML, CSS, Javascript and JQuery. I also have a basic level of NodeJs and VueJs knowledge.
 
