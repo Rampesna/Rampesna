@@ -2,17 +2,9 @@
 
 ### Hello World!
 
-Hi, I'm Talha Can. I work in the field of web technologies. I have worked with PHP and Laravel Framework on various projects, in particular.
+Hi, i am Talha Can. I am working on Web Technologies.
 
-I have been working with Laravel Framework professionally. I have developed many RESTful Web Service and Web Management Panels with Laravel.
-
-I have a good command of OOP and AOP programming methodologies. I have a lot of experience and expertise in MVC, RESTful and Laravel architectures, PHP, Ajax, HTML, CSS, Javascript and JQuery. I also have a basic level of NodeJs and VueJs knowledge.
-
-I have information about the working structure of crossplatform systems and the management of systems. I have enough knowledge about server systems to control the basic execution of a system.
-
-I have information about Project Management and Version Control Systems in Git and Trello style and I actively use many systems in this field. 
-
-Portfolio site: [Portfolio](https://rampesna.codes/)
+Portfolio site: [Portfolio](https://rampesna.com/)
 
 
 **📫 Where to find me:** 
@@ -21,9 +13,9 @@ Portfolio site: [Portfolio](https://rampesna.codes/)
 [![Gmail Badge](https://img.shields.io/badge/-rampesna@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:isen.rampesna@gmail.com)](mailto:rampesna@gmail.com)
 
 
-**💼 Currently working as:** Software Engineer at Ayssoft Bilgi Teknolojileri A.Ş.
+**💼 Currently working as:** Software Engineer, Fullstack Web Developer
 
-**👨🏻‍💻 Currently working on:** 
+**👨🏻‍💻 Currently working on:** Ayssoft Bilgi Teknolojileri A.Ş.
 
 
 <code><a href="https://www.php.net" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/php/php-ar21.svg"></a></code>
@@ -55,19 +47,3 @@ Portfolio site: [Portfolio](https://rampesna.codes/)
 <code><a href="https://flutter.dev/" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-ar21.svg"></a></code>
 <code><a href="https://nodejs.org/" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg"></a></code>
 <code><a href="https://www.mongodb.com/" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/mongodb/mongodb-ar21.svg"></a></code>
-
-
-<!--
-**ozzmhmt/ozzmhmt** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
