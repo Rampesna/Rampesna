@@ -23,6 +23,7 @@ Portfolio site: [Portfolio](https://rampesna.com/)
 <code><a href="https://www.json.org/" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/json/json-ar21.svg"></a></code>
 <code><a href="https://www.mysql.com" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg"></a></code>
 <code><a href="https://restfulapi.net" target="_blank"><img height="50" src="https://img.icons8.com/windows/2x/api-settings.png"></a></code>
+<code><a href="https://vuejs.org" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/vuejs/vuejs-ar21.svg"></a></code>
 <code><a href="https://tr.wikipedia.org/wiki/HTML5" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg"></a></code>
 <code><a href="https://tr.wikipedia.org/wiki/CSS" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/netlifyapp_watercss/netlifyapp_watercss-ar21.svg"></a></code>
 <code><a href="https://www.javascript.com" target="_blank"><img height="50" src="https://www.vectorlogo.zone/logos/javascript/javascript-ar21.svg"></a></code>
