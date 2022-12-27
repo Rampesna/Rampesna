@@ -1,3 +1,5 @@
+<a href="https://www.buymeacoffee.com/rampesna" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
 # 💫 About Me:
 Hi, i am Talha Can.<br><br>💼 Currently working as: Software Engineer, Fullstack Web Developer<br>👨🏻‍💻 Currently working on: Ayssoft Bilgi Teknolojileri A.Ş.
 
@@ -20,6 +22,3 @@ Hi, i am Talha Can.<br><br>💼 Currently working as: Software Engineer, Fullsta
 
   ## 💰 You can help me by Donating
   [![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/rampesna) 
-
-  
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
