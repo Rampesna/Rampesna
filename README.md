@@ -1,7 +1,15 @@
 <a href="https://www.buymeacoffee.com/rampesna" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 # 💫 About Me:
-Hi, i am Talha Can.<br><br>💼 Currently working as: Software Engineer, Fullstack Web Developer<br>👨🏻‍💻 Currently working on: Ayssoft Bilgi Teknolojileri A.Ş.
+Hi, i am Talha Can.
+
+I am working on mostly web technologies. I am developing softwares with using mostly PHP/Laravel, NodeJs, NestJs, VueJs, ElectronJs, ExpressJs, Socket.io and a little bit of C#/.netCore, Python/Django and Flutter.
+
+And i know JavaScript, TypeScript, JQuery, HTML5, CSS3 and Bootstrap.
+
+I am using the database technologies of MySQL, MariaDB, SQLite, Postgres, MongoDB and Redis.
+
+I also know about Apache, NginX, Docker, Swagger, AWS, Cloudflare and GoogleCloud.
 
 
 ## 🌐 Socials:
