@@ -58,6 +58,7 @@ I also know about Apache, NginX, Docker, Swagger, AWS, Cloudflare and GoogleClou
 ![Adobe Illustrator](https://img.shields.io/badge/adobeillustrator-%23FF9A00.svg?style=for-the-badge&logo=adobeillustrator&logoColor=white)
 ![Adobe Photoshop](https://img.shields.io/badge/adobephotoshop-%2331A8FF.svg?style=for-the-badge&logo=adobephotoshop&logoColor=white)
 # 📊 GitHub Stats:
+<a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=rampesna" alt="evrenonur" /></a>
 ![](https://github-readme-stats.vercel.app/api?username=rampesna&theme=monokai&hide_border=false&include_all_commits=true&count_private=true)<br/>
 ![](https://github-readme-streak-stats.herokuapp.com/?user=rampesna&theme=monokai&hide_border=false)<br/>
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=rampesna&theme=monokai&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
