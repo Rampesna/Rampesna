@@ -1,0 +1,103 @@
+<svg width="420" height="420" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#0d1f12"/>
+    </linearGradient>
+    <filter id="rglow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="rsoftglow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="420" height="420" rx="12" fill="url(#rbg)"/>
+  <rect width="420" height="420" rx="12" fill="none" stroke="#1e3a2a" stroke-width="1.5"/>
+
+  <!-- Title -->
+  <text x="210" y="24" text-anchor="middle" font-family="monospace" font-size="12" fill="#00FF88" filter="url(#rsoftglow)">$ ./expertise --radar</text>
+
+  <!-- Center -->
+  <!-- cx=210, cy=220, r=140 -->
+  <!-- 6 axes: Backend(top), Databases(top-right), DevOps(bottom-right), Cloud(bottom), Frontend(bottom-left), AI(top-left) -->
+  <!-- angles: 270, 330, 30, 90, 150, 210 degrees -->
+
+  <!-- Grid rings (20%, 40%, 60%, 80%, 100%) -->
+  <!-- Ring at 20% r=28 -->
+  <polygon points="210,192 234.2,206 234.2,234 210,248 185.8,234 185.8,206" fill="none" stroke="#1a2e1e" stroke-width="1"/>
+  <!-- Ring at 40% r=56 -->
+  <polygon points="210,164 258.5,192 258.5,248 210,276 161.5,248 161.5,192" fill="none" stroke="#1a2e1e" stroke-width="1"/>
+  <!-- Ring at 60% r=84 -->
+  <polygon points="210,136 282.7,178 282.7,262 210,304 137.3,262 137.3,178" fill="none" stroke="#1a2e1e" stroke-width="1"/>
+  <!-- Ring at 80% r=112 -->
+  <polygon points="210,108 307,164 307,276 210,332 113,276 113,164" fill="none" stroke="#1a2e1e" stroke-width="1"/>
+  <!-- Ring at 100% r=140 -->
+  <polygon points="210,80 331.2,150 331.2,290 210,360 88.8,290 88.8,150" fill="none" stroke="#1e3a2a" stroke-width="1.5"/>
+
+  <!-- Axis lines -->
+  <!-- Backend: 270° → top: (210, 80) -->
+  <line x1="210" y1="220" x2="210" y2="80" stroke="#1e3a2a" stroke-width="1"/>
+  <!-- Databases: 330° → (210+140*cos(-30°), 220+140*sin(-30°)) = (210+121.2, 220-70) = (331.2, 150) -->
+  <line x1="210" y1="220" x2="331.2" y2="150" stroke="#1e3a2a" stroke-width="1"/>
+  <!-- DevOps: 30° → (331.2, 290) -->
+  <line x1="210" y1="220" x2="331.2" y2="290" stroke="#1e3a2a" stroke-width="1"/>
+  <!-- Cloud: 90° → (210, 360) -->
+  <line x1="210" y1="220" x2="210" y2="360" stroke="#1e3a2a" stroke-width="1"/>
+  <!-- Frontend: 150° → (88.8, 290) -->
+  <line x1="210" y1="220" x2="88.8" y2="290" stroke="#1e3a2a" stroke-width="1"/>
+  <!-- AI: 210° → (88.8, 150) -->
+  <line x1="210" y1="220" x2="88.8" y2="150" stroke="#1e3a2a" stroke-width="1"/>
+
+  <!--
+    Data points (% of r=140):
+    Backend:   95% → r=133 → (210, 220-133) = (210, 87)
+    Databases: 92% → r=129 → (210+129*0.866, 220-129*0.5) = (321.8, 155.5)
+    DevOps:    93% → r=130 → (210+130*0.866, 220+130*0.5) = (322.6, 285)
+    Cloud:     88% → r=123 → (210, 220+123) = (210, 343)
+    Frontend:  80% → r=112 → (210-112*0.866, 220+112*0.5) = (113, 276)
+    AI:        78% → r=109 → (210-109*0.866, 220-109*0.5) = (115.6, 165.5)
+  -->
+
+  <!-- Data fill -->
+  <polygon
+    points="210,87 321.8,155.5 322.6,285 210,343 113,276 115.6,165.5"
+    fill="#00FF88"
+    fill-opacity="0.12"
+    stroke="#00FF88"
+    stroke-width="2"
+    filter="url(#rsoftglow)"
+  />
+
+  <!-- Data points -->
+  <circle cx="210" cy="87" r="5" fill="#00FF88" filter="url(#rglow)"/>
+  <circle cx="321.8" cy="155.5" r="5" fill="#00FF88" filter="url(#rglow)"/>
+  <circle cx="322.6" cy="285" r="5" fill="#00FF88" filter="url(#rglow)"/>
+  <circle cx="210" cy="343" r="5" fill="#00FF88" filter="url(#rglow)"/>
+  <circle cx="113" cy="276" r="5" fill="#00FF88" filter="url(#rglow)"/>
+  <circle cx="115.6" cy="165.5" r="5" fill="#00FF88" filter="url(#rglow)"/>
+
+  <!-- Labels -->
+  <text x="210" y="68" text-anchor="middle" font-family="monospace" font-size="11" fill="#c9d1d9">Backend</text>
+  <text x="210" y="79" text-anchor="middle" font-family="monospace" font-size="9" fill="#00FF88">95%</text>
+
+  <text x="345" y="148" text-anchor="start" font-family="monospace" font-size="11" fill="#c9d1d9">Databases</text>
+  <text x="345" y="159" text-anchor="start" font-family="monospace" font-size="9" fill="#00FF88">92%</text>
+
+  <text x="340" y="290" text-anchor="start" font-family="monospace" font-size="11" fill="#c9d1d9">DevOps</text>
+  <text x="340" y="301" text-anchor="start" font-family="monospace" font-size="9" fill="#00FF88">93%</text>
+
+  <text x="210" y="376" text-anchor="middle" font-family="monospace" font-size="11" fill="#c9d1d9">Cloud</text>
+  <text x="210" y="387" text-anchor="middle" font-family="monospace" font-size="9" fill="#00FF88">88%</text>
+
+  <text x="75" y="290" text-anchor="end" font-family="monospace" font-size="11" fill="#c9d1d9">Frontend</text>
+  <text x="75" y="301" text-anchor="end" font-family="monospace" font-size="9" fill="#00FF88">80%</text>
+
+  <text x="100" y="148" text-anchor="end" font-family="monospace" font-size="11" fill="#c9d1d9">AI / LLM</text>
+  <text x="100" y="159" text-anchor="end" font-family="monospace" font-size="9" fill="#00FF88">78%</text>
+
+  <!-- Center dot -->
+  <circle cx="210" cy="220" r="3" fill="#00FF88" opacity="0.6"/>
+</svg>

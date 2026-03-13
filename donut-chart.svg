@@ -1,0 +1,130 @@
+<svg width="380" height="420" viewBox="0 0 380 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#0d1f12"/>
+    </linearGradient>
+    <filter id="cglow">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="380" height="420" rx="12" fill="url(#cbg)"/>
+  <rect width="380" height="420" rx="12" fill="none" stroke="#1e3a2a" stroke-width="1.5"/>
+
+  <text x="190" y="24" text-anchor="middle" font-family="monospace" font-size="12" fill="#00FF88">$ ./focus --time-split</text>
+  <text x="190" y="38" text-anchor="middle" font-family="monospace" font-size="9" fill="#2d5a3d">where the hours go</text>
+
+  <!-- === Donut-style circle breakdown === -->
+  <!--
+    Total = 100%
+    Backend APIs: 40%   → #00ADD8
+    DevOps/Infra: 22%   → #2496ED
+    Databases:    16%   → #4EA94B
+    Frontend:     12%   → #4FC08D
+    AI/LLM:       10%   → #00FF88
+
+    SVG arc: cx=190, cy=205, r=110 (outer), r=70 (inner)
+    circumference outer = 2*pi*110 ≈ 690.8
+    Each segment = (pct/100) * 690.8
+
+    strokeDasharray = "arc_length total_circumference"
+    strokeDashoffset = -cumulative_offset (rotate start from top = -90° offset via transform)
+
+    Backend: 40% of 690.8 = 276.3
+    DevOps:  22% of 690.8 = 151.9
+    DB:      16% of 690.8 = 110.5
+    FE:      12% of 690.8 = 82.9
+    AI:      10% of 690.8 = 69.1
+
+    cumulative offsets (going from top = -172.7 i.e. -690.8/4):
+    start at 0, offset applied as negative rotation
+    We use transform rotate on each path
+  -->
+
+  <!-- Background ring -->
+  <circle cx="190" cy="205" r="110" fill="none" stroke="#161b22" stroke-width="38"/>
+
+  <!-- Backend APIs: 40% -->
+  <circle cx="190" cy="205" r="110" fill="none"
+    stroke="#00ADD8"
+    stroke-width="38"
+    stroke-dasharray="276.3 690.8"
+    stroke-dashoffset="172.7"
+    stroke-linecap="butt"
+    transform="rotate(-90 190 205)"
+    opacity="0.9"
+    filter="url(#cglow)"
+  />
+
+  <!-- DevOps/Infra: 22% -->
+  <circle cx="190" cy="205" r="110" fill="none"
+    stroke="#2496ED"
+    stroke-width="38"
+    stroke-dasharray="151.9 690.8"
+    stroke-dashoffset="-103.6"
+    stroke-linecap="butt"
+    transform="rotate(-90 190 205)"
+    opacity="0.9"
+  />
+
+  <!-- Databases: 16% -->
+  <circle cx="190" cy="205" r="110" fill="none"
+    stroke="#4EA94B"
+    stroke-width="38"
+    stroke-dasharray="110.5 690.8"
+    stroke-dashoffset="-255.5"
+    stroke-linecap="butt"
+    transform="rotate(-90 190 205)"
+    opacity="0.9"
+  />
+
+  <!-- Frontend: 12% -->
+  <circle cx="190" cy="205" r="110" fill="none"
+    stroke="#4FC08D"
+    stroke-width="38"
+    stroke-dasharray="82.9 690.8"
+    stroke-dashoffset="-366"
+    stroke-linecap="butt"
+    transform="rotate(-90 190 205)"
+    opacity="0.9"
+  />
+
+  <!-- AI/LLM: 10% -->
+  <circle cx="190" cy="205" r="110" fill="none"
+    stroke="#00FF88"
+    stroke-width="38"
+    stroke-dasharray="69.1 690.8"
+    stroke-dashoffset="-448.9"
+    stroke-linecap="butt"
+    transform="rotate(-90 190 205)"
+    opacity="0.9"
+    filter="url(#cglow)"
+  />
+
+  <!-- Inner center text -->
+  <text x="190" y="197" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">daily</text>
+  <text x="190" y="211" text-anchor="middle" font-family="monospace" font-size="10" fill="#8b949e">focus</text>
+
+  <!-- Legend -->
+  <rect x="24" y="342" width="10" height="10" rx="2" fill="#00ADD8"/>
+  <text x="40" y="352" font-family="monospace" font-size="10" fill="#c9d1d9">Backend APIs</text>
+  <text x="155" y="352" text-anchor="end" font-family="monospace" font-size="10" fill="#00ADD8">40%</text>
+
+  <rect x="170" y="342" width="10" height="10" rx="2" fill="#2496ED"/>
+  <text x="186" y="352" font-family="monospace" font-size="10" fill="#c9d1d9">DevOps</text>
+  <text x="356" y="352" text-anchor="end" font-family="monospace" font-size="10" fill="#2496ED">22%</text>
+
+  <rect x="24" y="366" width="10" height="10" rx="2" fill="#4EA94B"/>
+  <text x="40" y="376" font-family="monospace" font-size="10" fill="#c9d1d9">Databases</text>
+  <text x="155" y="376" text-anchor="end" font-family="monospace" font-size="10" fill="#4EA94B">16%</text>
+
+  <rect x="170" y="366" width="10" height="10" rx="2" fill="#4FC08D"/>
+  <text x="186" y="376" font-family="monospace" font-size="10" fill="#c9d1d9">Frontend</text>
+  <text x="356" y="376" text-anchor="end" font-family="monospace" font-size="10" fill="#4FC08D">12%</text>
+
+  <rect x="24" y="390" width="10" height="10" rx="2" fill="#00FF88"/>
+  <text x="40" y="400" font-family="monospace" font-size="10" fill="#c9d1d9">AI / LLM</text>
+  <text x="155" y="400" text-anchor="end" font-family="monospace" font-size="10" fill="#00FF88">10%</text>
+</svg>

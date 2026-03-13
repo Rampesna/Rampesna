@@ -1,0 +1,129 @@
+<svg width="800" height="420" viewBox="0 0 800 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#0d1f12"/>
+    </linearGradient>
+    <linearGradient id="go" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ADD8"/>
+      <stop offset="100%" style="stop-color:#00D4FF"/>
+    </linearGradient>
+    <linearGradient id="py" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3776AB"/>
+      <stop offset="100%" style="stop-color:#FFD43B"/>
+    </linearGradient>
+    <linearGradient id="php" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#777BB4"/>
+      <stop offset="100%" style="stop-color:#9B9BDB"/>
+    </linearGradient>
+    <linearGradient id="ts" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3178C6"/>
+      <stop offset="100%" style="stop-color:#5BA3E8"/>
+    </linearGradient>
+    <linearGradient id="cs" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#239120"/>
+      <stop offset="100%" style="stop-color:#68D85F"/>
+    </linearGradient>
+    <linearGradient id="js" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0C30F"/>
+      <stop offset="100%" style="stop-color:#FFE55C"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="420" rx="12" fill="url(#bg)"/>
+  <rect width="800" height="420" rx="12" fill="none" stroke="#1e3a2a" stroke-width="1.5"/>
+
+  <!-- Grid lines -->
+  <line x1="220" y1="40" x2="220" y2="390" stroke="#1a2e1e" stroke-width="1"/>
+  <line x1="360" y1="40" x2="360" y2="390" stroke="#1a2e1e" stroke-width="1"/>
+  <line x1="500" y1="40" x2="500" y2="390" stroke="#1a2e1e" stroke-width="1"/>
+  <line x1="640" y1="40" x2="640" y2="390" stroke="#1a2e1e" stroke-width="1"/>
+  <line x1="760" y1="40" x2="760" y2="390" stroke="#1a2e1e" stroke-width="1"/>
+
+  <!-- Grid labels -->
+  <text x="220" y="30" text-anchor="middle" fill="#2d5a3d" font-family="monospace" font-size="10">25%</text>
+  <text x="360" y="30" text-anchor="middle" fill="#2d5a3d" font-family="monospace" font-size="10">50%</text>
+  <text x="500" y="30" text-anchor="middle" fill="#2d5a3d" font-family="monospace" font-size="10">75%</text>
+  <text x="640" y="30" text-anchor="middle" fill="#2d5a3d" font-family="monospace" font-size="10">90%</text>
+  <text x="760" y="30" text-anchor="middle" fill="#2d5a3d" font-family="monospace" font-size="10">100%</text>
+
+  <!-- Title -->
+  <text x="20" y="22" font-family="monospace" font-size="13" fill="#00FF88" filter="url(#softglow)">$ ./tech-proficiency --language</text>
+
+  <!-- === ROW 1: Go === -->
+  <text x="20" y="68" font-family="monospace" font-size="12" fill="#c9d1d9">Go / Gin</text>
+  <text x="200" y="68" text-anchor="end" font-family="monospace" font-size="11" fill="#00ADD8">95%</text>
+  <!-- track -->
+  <rect x="210" y="55" width="560" height="16" rx="8" fill="#161b22"/>
+  <!-- bar: 95% of 560 = 532 -->
+  <rect x="210" y="55" width="532" height="16" rx="8" fill="url(#go)" filter="url(#softglow)"/>
+  <!-- dot end -->
+  <circle cx="742" cy="63" r="5" fill="#00D4FF" filter="url(#glow)"/>
+
+  <!-- === ROW 2: Python === -->
+  <text x="20" y="108" font-family="monospace" font-size="12" fill="#c9d1d9">Python / FastAPI</text>
+  <text x="200" y="108" text-anchor="end" font-family="monospace" font-size="11" fill="#3776AB">92%</text>
+  <rect x="210" y="95" width="560" height="16" rx="8" fill="#161b22"/>
+  <!-- 92% of 560 = 515 -->
+  <rect x="210" y="95" width="515" height="16" rx="8" fill="url(#py)" filter="url(#softglow)"/>
+  <circle cx="725" cy="103" r="5" fill="#FFD43B" filter="url(#glow)"/>
+
+  <!-- === ROW 3: PHP === -->
+  <text x="20" y="148" font-family="monospace" font-size="12" fill="#c9d1d9">PHP / Laravel</text>
+  <text x="200" y="148" text-anchor="end" font-family="monospace" font-size="11" fill="#777BB4">90%</text>
+  <rect x="210" y="135" width="560" height="16" rx="8" fill="#161b22"/>
+  <!-- 90% of 560 = 504 -->
+  <rect x="210" y="135" width="504" height="16" rx="8" fill="url(#php)" filter="url(#softglow)"/>
+  <circle cx="714" cy="143" r="5" fill="#9B9BDB" filter="url(#glow)"/>
+
+  <!-- === ROW 4: TypeScript === -->
+  <text x="20" y="188" font-family="monospace" font-size="12" fill="#c9d1d9">TypeScript / NestJS</text>
+  <text x="200" y="188" text-anchor="end" font-family="monospace" font-size="11" fill="#3178C6">88%</text>
+  <rect x="210" y="175" width="560" height="16" rx="8" fill="#161b22"/>
+  <!-- 88% of 560 = 493 -->
+  <rect x="210" y="175" width="493" height="16" rx="8" fill="url(#ts)" filter="url(#softglow)"/>
+  <circle cx="703" cy="183" r="5" fill="#5BA3E8" filter="url(#glow)"/>
+
+  <!-- === ROW 5: C# === -->
+  <text x="20" y="228" font-family="monospace" font-size="12" fill="#c9d1d9">C# / .NET Core</text>
+  <text x="200" y="228" text-anchor="end" font-family="monospace" font-size="11" fill="#239120">85%</text>
+  <rect x="210" y="215" width="560" height="16" rx="8" fill="#161b22"/>
+  <!-- 85% of 560 = 476 -->
+  <rect x="210" y="215" width="476" height="16" rx="8" fill="url(#cs)" filter="url(#softglow)"/>
+  <circle cx="686" cy="223" r="5" fill="#68D85F" filter="url(#glow)"/>
+
+  <!-- === ROW 6: JavaScript === -->
+  <text x="20" y="268" font-family="monospace" font-size="12" fill="#c9d1d9">JavaScript / Node.js</text>
+  <text x="200" y="268" text-anchor="end" font-family="monospace" font-size="11" fill="#F0C30F">87%</text>
+  <rect x="210" y="255" width="560" height="16" rx="8" fill="#161b22"/>
+  <!-- 87% of 560 = 487 -->
+  <rect x="210" y="255" width="487" height="16" rx="8" fill="url(#js)" filter="url(#softglow)"/>
+  <circle cx="697" cy="263" r="5" fill="#FFE55C" filter="url(#glow)"/>
+
+  <!-- Divider -->
+  <line x1="20" y1="295" x2="780" y2="295" stroke="#1e3a2a" stroke-width="1" stroke-dasharray="4,4"/>
+  <text x="20" y="312" font-family="monospace" font-size="13" fill="#00FF88" filter="url(#softglow)">$ ./tech-proficiency --infra</text>
+
+  <!-- === ROW 7: Docker/K8s === -->
+  <text x="20" y="348" font-family="monospace" font-size="12" fill="#c9d1d9">Docker / Kubernetes</text>
+  <text x="200" y="348" text-anchor="end" font-family="monospace" font-size="11" fill="#2496ED">93%</text>
+  <rect x="210" y="335" width="560" height="16" rx="8" fill="#161b22"/>
+  <rect x="210" y="335" width="521" height="16" rx="8" fill="#2496ED" opacity="0.9" filter="url(#softglow)"/>
+  <circle cx="731" cy="343" r="5" fill="#2496ED" filter="url(#glow)"/>
+
+  <!-- === ROW 8: Cloud === -->
+  <text x="20" y="388" font-family="monospace" font-size="12" fill="#c9d1d9">AWS / GCP / Cloudflare</text>
+  <text x="200" y="388" text-anchor="end" font-family="monospace" font-size="11" fill="#FF9900">88%</text>
+  <rect x="210" y="375" width="560" height="16" rx="8" fill="#161b22"/>
+  <rect x="210" y="375" width="493" height="16" rx="8" fill="#FF9900" opacity="0.9" filter="url(#softglow)"/>
+  <circle cx="703" cy="383" r="5" fill="#FF9900" filter="url(#glow)"/>
+</svg>
